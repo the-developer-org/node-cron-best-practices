@@ -1,0 +1,32 @@
+{
+	"name": "cron-best-practices",
+	"version": "1.0.0",
+	"description": "---",
+	"main": "server.ts",
+	"scripts": {
+		"ts:build": "tsc",
+		"ts:start": "ts-node src/server.ts",
+		"dev": "rm -rf dist && npm run ts:build && npm run ts:start  node dist/src/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/the-developer-org/node-cron-best-practices.git"
+	},
+	"author": "Mudassir Quraishi",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/the-developer-org/node-cron-best-practices/issues"
+	},
+	"homepage": "https://github.com/the-developer-org/node-cron-best-practices#readme",
+	"dependencies": {
+		"dotenv": "^16.4.7",
+		"express": "^4.21.2",
+		"node-cron": "^3.0.3"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.1",
+		"@types/node-cron": "^3.0.11",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.2"
+	}
+}
